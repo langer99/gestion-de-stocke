@@ -1,0 +1,151 @@
+<!-- res/layout/item_details_layout.xml -->
+
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            app:title="app"
+
+            android:id="@+id/topappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:layout_scrollEffect="compress"
+            app:navigationIcon="@drawable/baseline_arrow_back_24" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="8dp" />
+    <!-- Item Name -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/nameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Item Name" />
+
+        <!-- Item Date -->
+        <TextView
+            android:id="@+id/dateDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="Date: 2023-12-10"
+            android:layout_marginTop="8dp" />
+
+        <!-- Item Quantity -->
+        <TextView
+            android:id="@+id/quantityDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="Quantity: 10"
+
+            android:layout_marginTop="8dp" />
+
+        <!-- Item Category ID -->
+        <TextView
+            android:id="@+id/textViewCategoryId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:text="Category"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CatNameDetail"
+            android:textStyle="bold"
+            android:text="name cat" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp" />
+
+        <TextView
+            android:id="@+id/descriptionDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description of Category" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Applications" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/sale"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="SALE" />
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/ret"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="RETURN" />
+        </LinearLayout>
+        <!-- Buttons -->
+    </LinearLayout>
+
+
+</LinearLayout>
